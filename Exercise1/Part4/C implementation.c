@@ -4,16 +4,15 @@
 
 int i = 0;
 
-//increase
-void* thread_1(){ 
+void* increase(){ 
    for (int j = 0; j < 1000000; j++){
        i++;
    }
    return NULL;
 }
 
-//decrease
-void* thread_2(){ 
+
+void* decrease(){ 
    for (int j = 0; j < 1000000; j++){
       i--;
    }
@@ -28,8 +27,8 @@ int main(){
   pthread_t thread_1;
   phtread_t thread_2;
 
-  pthread_create(&thread_1, NULL, thread_1(), NULL);
-  pthread_create(&thread_2, NULL, thread_2(), NULL);
+  pthread_create(&thread_1, NULL, increase(), NULL);
+  pthread_create(&thread_2, NULL, decrease(), NULL);
   
   pthread_join(thread_1, NULL);
   pthread_join(thread_2, NULL);
