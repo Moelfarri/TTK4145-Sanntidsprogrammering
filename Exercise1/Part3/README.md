@@ -9,22 +9,24 @@
  ### Why have machines become increasingly multicore in the past decade?
  > There are a lot of challenges in the development of CPUs and one of them is increasing performance without raising the processor clock speed. And as a result Multi-core processors have become more common. 
 The advantages of Multi-core CPU:
-- Works faster for certain programs
-- Computer will not get as hot when it is turned on
-- Computer needs less power because it can turn off some section if they are unused
-- Parallelism 
+>- Works faster for certain programs
+>- Computer will not get as hot when it is turned on
+>- Computer needs less power because it can turn off some section if they are unused
+>- Parallelism 
  
  ### What kinds of problems motivates the need for concurrent execution?
  (Or phrased differently: What problems do concurrency help in solving?)
- > *Your answer here*
+ > All programs that are designed for multi-core CPUs should neccesarily use concurrency as otherwise only one core will be used and the rest of the CPU will be sitting there and doing nothing. Motivation: Any desktop app, Mobile apps, Video games for the playstation or any other console gaming platform, even cloud computing to able to manipulate multiple servers if the platform you own ends up growing. 
  
  ### Does creating concurrent programs make the programmer's life easier? Harder? Maybe both?
  (Come back to this after you have worked on part 4 of this exercise)
- > *Your answer here*
+ > It makes the programmer's life harder because as the system scales the more complex it becomes. Also because of the unpredictible nature of tracking down bugs and reproducing them as well as unpredictable scheduling
  
  ### What are the differences between processes, threads, green threads, and coroutines?
- > *Your answer here*
- 
+ > Processes
+ > Threads
+ > Green threads
+ > Coroutines
  ### Which one of these do `pthread_create()` (C/POSIX), `threading.Thread()` (Python), `go` (Go) create?
  > *Your answer here*
  
