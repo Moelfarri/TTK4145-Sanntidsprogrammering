@@ -1,15 +1,21 @@
-# Reasons for concurrency and parallelism
-
-
-To complete this exercise you will have to use git. Create one or several commits that adds answers to the following questions and push it to your groups repository to complete the task.
-
-When answering the questions, remember to use all the resources at your disposal. Asking the internet isn't a form of "cheating", it's a way of learning.
+# Reasons for concurrency and parallelism 
 
  ### What is concurrency? What is parallelism? What's the difference?
- > *Your answer here*
+ > Concurrency is about an application being able to execute a minimum of two tasks or more virtually at the same time. 
+ 
+ Parallelism on the other hand does not need two or more tasks to individually exist. It physically runs parts of the same task/multiple tasks at the same time using multi-core infrastructure of the CPU, by assigning one core to each sub-task.
+ 
+ So the difference is that Concurrency is about two tasks being able to run and complete in overlapping time periods, wihle parallelism is tasks running at the same time on a multi-core processor. 
+ 
  
  ### Why have machines become increasingly multicore in the past decade?
- > *Your answer here*
+ > There are a lot of challenges in the development of CPUs and one of them is increasing performance without raising the processor clock speed. And as a result Multi-core processors have become more common. 
+
+The advantages of Multi-core CPU:
+- Works faster for certain programs
+- Computer will not get as hot when it is turned on
+- Computer needs less power because it can turn off some section if they are unused
+- Parallelism 
  
  ### What kinds of problems motivates the need for concurrent execution?
  (Or phrased differently: What problems do concurrency help in solving?)
