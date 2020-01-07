@@ -23,15 +23,15 @@ func decreasing(c chan<- bool) {
 func main() {
     runtime.GOMAXPROCS(runtime.NumCPU())   
     
-    thread_1 := make(chan bool)
-    thread_2 := make(chan bool)
+    channel_1 := make(chan bool)
+    channel_2 := make(chan bool)
     
-    go increasing(thread_1)
-    go decreasing(thread_2)
+    go increasing(channel_1)
+    go decreasing(channel_2)
     
     
-    <-thread_1
-    <-thread_2
+    <-channel_1
+    <-channel_2
 	                              
     Println(i)
 }
