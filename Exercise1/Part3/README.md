@@ -36,10 +36,9 @@ The advantages of Multi-core CPU:
 > go - Creates a goroutine in golang runtime. This is a way for concurrency
 >They all of sort of create? (i am not sure i fully understood this question)
  ### How does pythons Global Interpreter Lock (GIL) influence the way a python Thread behaves?
- > *Your answer here*
- 
+ >GIL prevents two threads from executing simultaneously in the same program. Therefore it limits parallel programming in PYthon out of the box.
  ### With this in mind: What is the workaround for the GIL (Hint: it's another module)?
- > *Your answer here*
+ > One can use the threading module or if one wnats more "proper" parallelism multiprocessing module which will run the code in separate OS processes is also possible ("it bypasses the GIL"). 
  
  ### What does `func GOMAXPROCS(n int) int` change? 
- > *Your answer here*
+ > GOMAXPROCS sets the maximum number of CPUs that can be executing simultaneously and returns the previous setting in golang. If n < 1, it does not change the current setting.
