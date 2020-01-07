@@ -1,16 +1,13 @@
 # Reasons for concurrency and parallelism 
 
  ### What is concurrency? What is parallelism? What's the difference?
- > Concurrency is about an application being able to execute a minimum of two tasks or more virtually at the same time. 
- 
+ > Concurrency is about an application being able to execute a minimum of two tasks or more virtually at the same time.  
  Parallelism on the other hand does not need two or more tasks to individually exist. It physically runs parts of the same task/multiple tasks at the same time using multi-core infrastructure of the CPU, by assigning one core to each sub-task.
- 
  So the difference is that Concurrency is about two tasks being able to run and complete in overlapping time periods, wihle parallelism is tasks running at the same time on a multi-core processor. 
  
  
  ### Why have machines become increasingly multicore in the past decade?
  > There are a lot of challenges in the development of CPUs and one of them is increasing performance without raising the processor clock speed. And as a result Multi-core processors have become more common. 
-
 The advantages of Multi-core CPU:
 - Works faster for certain programs
 - Computer will not get as hot when it is turned on
